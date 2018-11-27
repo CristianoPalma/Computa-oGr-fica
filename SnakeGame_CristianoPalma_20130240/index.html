@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Snake Game</title>
+</head>
+<body onload='support()'>
+	<div id='main'>
+				<header class='entry-header'>
+					<h1 class='entry-title' style='font-size:15px; text-align:center'>Snake Game por Cristiano Palma Nº20130240</h1>
+				</header>
+				<div class='entry-content' style='text-align: justify'>
+				<center>
+					<div style='width: 502px'>
+						<div style='width: 151px; float: left'>
+							<p style='text-align: left'><strong>Comida:</strong>
+								<span id='foodEaten'>0</span>
+							</p>
+						</div>
+						<div style='width: 151px; float: right'>
+							<p style='text-align: right'><strong>Velocidade:</strong>
+								<span id='milliseconds'>50</span>
+							</p>
+						</div>
+					</div>
+					<div style='width: 400px; height:60px; float: center; font-size:15px'>
+					<strong>Estado do Jogo:</strong><br/><span id='status'> Iniciado, pode pausar o jogo ao carregar a tecla P.</span></div>
+					<canvas id='base' style='background-color:#fff; border:3px solid #000000' width="500" height="500"></canvas>
+					<div style='font-size:12px; text-align:left'>		
+					<table style="height: 70px; background-color:silver; width: 770px; border: 2px none; margin-left: auto; margin-right: auto;" border="3";>
+					<tbody>
+					<tr>
+					<th style="width: 118.75px; text-align: center;" colspan="2">Comados:</th>
+					<th style="width: 118.75px; text-align: center;" colspan="2">Comandos Extras:</th>
+					</tr>
+					<tr>
+					<th style="width: 118.75px; text-align: center;">Esquerda:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla A ou Seta Esquerda</td>
+					<th style="width: 118.75px; text-align: center;">Reiniciar:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla ESC</td>
+					</tr>
+					<tr>
+					<th style="width: 118.75px; text-align: center;">Cima:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla W ou Seta Cima</td>
+					<th style="width: 118.75px; text-align: center;">Pausar:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla Espaço</td>
+					</tr>
+					<tr>
+					<th style="width: 118.75px; text-align: center;">Direita:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla D ou Seta Direita</td>
+					<th style="width: 118.75px; text-align: center;">Acelerar Velocidade:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla +</td>
+					</tr>
+					<tr>
+					<th style="width: 118.75px; text-align: center;">Baixo:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla S ou Seta Baixo</td>
+					<th style="width: 118.75px; text-align: center;">Diminuir Velocidade:</th>
+					<td style="width: 118.75px; text-align: center;">Tecla -</td>
+					</tr>
+					</tbody>
+					</table>
+				</center>
+			</div>
+	</div>
+	<script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
